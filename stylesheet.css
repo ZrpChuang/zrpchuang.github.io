@@ -293,15 +293,23 @@ p {
 }
 
 .icml-preview {
-  min-height: 245px;
+  min-height: 270px;
 }
 
 .icml-preview .preview-back {
-  width: 86%;
+  top: 0;
+  right: 0;
+  width: 72%;
+}
+
+.icml-preview .preview-mid {
+  top: 42px;
+  right: 16px;
+  width: 48%;
 }
 
 .icml-preview .preview-front {
-  width: 70%;
+  width: 92%;
 }
 
 .iclr-preview {
