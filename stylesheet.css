@@ -312,19 +312,19 @@ p {
 }
 
 .iclr-preview .preview-back {
-  top: 0;
+  top: 24px;
   right: 0;
   width: 62%;
 }
 
 .iclr-preview .preview-mid {
-  top: 46px;
+  top: 70px;
   right: 16px;
   width: 48%;
 }
 
 .iclr-preview .preview-front {
-  bottom: 22px;
+  bottom: 52px;
   width: 104%;
 }
 
