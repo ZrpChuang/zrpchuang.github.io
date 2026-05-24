@@ -251,6 +251,30 @@ p {
   object-fit: contain;
 }
 
+.stacked-preview {
+  position: relative;
+  display: block;
+  min-height: 210px;
+}
+
+.stacked-preview img {
+  position: absolute;
+  background: #ffffff;
+}
+
+.stacked-preview .preview-back {
+  top: 0;
+  right: 0;
+  width: 76%;
+  opacity: 0.92;
+}
+
+.stacked-preview .preview-front {
+  bottom: 0;
+  left: 0;
+  width: 92%;
+}
+
 .venue-tag {
   position: absolute;
   top: 10px;
@@ -413,6 +437,10 @@ span.highlight,
 
   .publication-media img {
     max-height: none;
+  }
+
+  .stacked-preview {
+    min-height: 220px;
   }
 
   .venue-tag {
