@@ -207,6 +207,15 @@ p {
   line-height: 1.2;
 }
 
+.section-icon {
+  display: inline-block;
+  width: 34px;
+  margin-right: 6px;
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: -2px;
+}
+
 .section-block h3 {
   margin: 0 0 8px;
   color: #444a52;
@@ -259,6 +268,7 @@ p {
 
 .stacked-preview img {
   position: absolute;
+  max-height: none;
   background: #ffffff;
 }
 
@@ -269,10 +279,37 @@ p {
   opacity: 0.92;
 }
 
+.stacked-preview .preview-mid {
+  top: 38px;
+  right: 12px;
+  width: 58%;
+  opacity: 0.96;
+}
+
 .stacked-preview .preview-front {
   bottom: 0;
   left: 0;
   width: 92%;
+}
+
+.icml-preview {
+  min-height: 245px;
+}
+
+.icml-preview .preview-back {
+  width: 86%;
+}
+
+.icml-preview .preview-front {
+  width: 70%;
+}
+
+.iclr-preview {
+  min-height: 250px;
+}
+
+.iclr-preview .preview-front {
+  width: 88%;
 }
 
 .venue-tag {
@@ -345,6 +382,10 @@ p {
 
 .internship-item:last-child {
   margin-bottom: 0;
+}
+
+.internship-item.text-only {
+  grid-template-columns: 1fr;
 }
 
 .internship-stack {
@@ -464,6 +505,11 @@ span.highlight,
 
   .stacked-preview {
     min-height: 220px;
+  }
+
+  .icml-preview,
+  .iclr-preview {
+    min-height: 300px;
   }
 
   .internship-stack {
