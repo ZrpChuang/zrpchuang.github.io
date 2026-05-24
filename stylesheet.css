@@ -347,6 +347,11 @@ p {
   margin-bottom: 0;
 }
 
+.internship-stack {
+  position: relative;
+  min-height: 250px;
+}
+
 .internship-media {
   display: block;
   width: 100%;
@@ -354,6 +359,24 @@ p {
   border: 1px solid #eeeeee;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.14);
   object-fit: cover;
+}
+
+.internship-stack .internship-media {
+  position: absolute;
+  background: #ffffff;
+}
+
+.internship-back {
+  top: 0;
+  right: 0;
+  width: 84%;
+  opacity: 0.92;
+}
+
+.internship-front {
+  bottom: 0;
+  left: 0;
+  width: 84%;
 }
 
 .internship-placeholder {
@@ -441,6 +464,10 @@ span.highlight,
 
   .stacked-preview {
     min-height: 220px;
+  }
+
+  .internship-stack {
+    min-height: 300px;
   }
 
   .venue-tag {
