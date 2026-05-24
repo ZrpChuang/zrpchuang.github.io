@@ -224,8 +224,9 @@ p {
 
 .publication-item {
   display: grid;
-  grid-template-columns: 130px minmax(0, 1fr);
-  gap: 28px;
+  grid-template-columns: minmax(260px, 38%) minmax(0, 1fr);
+  gap: 34px;
+  align-items: center;
   padding: 0 0 28px;
   margin-bottom: 28px;
   border-bottom: 1px solid #ececec;
@@ -235,8 +236,26 @@ p {
   margin-bottom: 0;
 }
 
+.publication-media {
+  position: relative;
+  display: block;
+  color: inherit;
+}
+
+.publication-media img {
+  display: block;
+  width: 100%;
+  max-height: 230px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.14);
+  object-fit: contain;
+}
+
 .venue-tag {
-  align-self: start;
+  position: absolute;
+  top: 10px;
+  left: -8px;
+  z-index: 1;
   width: fit-content;
   min-width: 104px;
   padding: 5px 14px;
@@ -266,6 +285,16 @@ p {
   border-bottom: 1px solid #ececec;
 }
 
+.education-item {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+}
+
 .timeline-item:last-child {
   margin-bottom: 0;
 }
@@ -277,6 +306,40 @@ p {
 
 .role-line {
   color: #555b63;
+  font-weight: 700;
+}
+
+.internship-item {
+  display: grid;
+  grid-template-columns: minmax(180px, 260px) minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #ececec;
+}
+
+.internship-item:last-child {
+  margin-bottom: 0;
+}
+
+.internship-media {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.14);
+  object-fit: cover;
+}
+
+.internship-placeholder {
+  display: grid;
+  min-height: 150px;
+  place-items: center;
+  border: 1px solid #e5e8ee;
+  color: #174a91;
+  background: #f6f8fb;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -342,8 +405,17 @@ span.highlight,
   }
 
   .publication-item,
-  .timeline-item {
+  .timeline-item,
+  .internship-item {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .publication-media img {
+    max-height: none;
+  }
+
+  .venue-tag {
+    left: 0;
   }
 }
