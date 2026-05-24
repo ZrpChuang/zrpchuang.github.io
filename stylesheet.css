@@ -293,7 +293,7 @@ p {
 }
 
 .icml-preview {
-  min-height: 270px;
+  min-height: 255px;
 }
 
 .icml-preview .preview-back {
@@ -302,18 +302,12 @@ p {
   width: 72%;
 }
 
-.icml-preview .preview-mid {
-  top: 42px;
-  right: 16px;
-  width: 48%;
-}
-
 .icml-preview .preview-front {
   width: 92%;
 }
 
 .iclr-preview {
-  min-height: 285px;
+  min-height: 315px;
 }
 
 .iclr-preview .preview-back {
@@ -329,7 +323,7 @@ p {
 }
 
 .iclr-preview .preview-front {
-  width: 96%;
+  width: 112%;
 }
 
 .venue-tag {
