@@ -124,9 +124,6 @@ p {
 }
 
 .top-nav .nav-home {
-  padding: 8px 2px;
-  border: 2px solid #f09228;
-  border-radius: 4px;
   color: #6b717a;
 }
 
@@ -181,6 +178,18 @@ p {
   list-style: none;
   font-size: 18px;
   font-weight: 700;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-icon {
+  width: 24px;
+  text-align: center;
+  line-height: 1;
 }
 
 .content {
