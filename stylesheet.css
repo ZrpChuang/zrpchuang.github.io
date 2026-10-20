@@ -204,6 +204,11 @@ p {
   font-weight: 700;
 }
 
+.phd-opportunity,
+.phd-opportunity a {
+  color: red;
+}
+
 .section-block {
   padding: 28px 0;
   border-top: 1px solid #ececec;
@@ -258,89 +263,22 @@ p {
   position: relative;
   display: block;
   color: inherit;
+  padding-top: 34px;
 }
 
 .publication-media img {
   display: block;
   width: 100%;
-  max-height: 230px;
+  height: auto;
   border: 1px solid #eeeeee;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.14);
   object-fit: contain;
 }
 
-.stacked-preview {
-  position: relative;
-  display: block;
-  min-height: 210px;
-}
-
-.stacked-preview img {
-  position: absolute;
-  max-height: none;
-  background: #ffffff;
-}
-
-.stacked-preview .preview-back {
-  top: 0;
-  right: 0;
-  width: 76%;
-  opacity: 0.92;
-}
-
-.stacked-preview .preview-mid {
-  top: 38px;
-  right: 12px;
-  width: 58%;
-  opacity: 0.96;
-}
-
-.stacked-preview .preview-front {
-  bottom: 0;
-  left: 0;
-  width: 92%;
-}
-
-.icml-preview {
-  min-height: 255px;
-}
-
-.icml-preview .preview-back {
-  top: 24px;
-  right: 0;
-  width: 72%;
-}
-
-.icml-preview .preview-front {
-  bottom: 28px;
-  width: 92%;
-}
-
-.iclr-preview {
-  min-height: 315px;
-}
-
-.iclr-preview .preview-back {
-  top: 24px;
-  right: 0;
-  width: 62%;
-}
-
-.iclr-preview .preview-mid {
-  top: 70px;
-  right: 16px;
-  width: 48%;
-}
-
-.iclr-preview .preview-front {
-  bottom: 52px;
-  width: 104%;
-}
-
 .venue-tag {
   position: absolute;
-  top: 10px;
-  left: -8px;
+  top: 0;
+  left: 0;
   z-index: 1;
   width: fit-content;
   min-width: 104px;
@@ -413,49 +351,6 @@ p {
   grid-template-columns: 1fr;
 }
 
-.internship-stack {
-  position: relative;
-  min-height: 250px;
-}
-
-.internship-media {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1;
-  border: 1px solid #eeeeee;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.14);
-  object-fit: cover;
-}
-
-.internship-stack .internship-media {
-  position: absolute;
-  background: #ffffff;
-}
-
-.internship-back {
-  top: 0;
-  right: 0;
-  width: 84%;
-  opacity: 0.92;
-}
-
-.internship-front {
-  bottom: 0;
-  left: 0;
-  width: 84%;
-}
-
-.internship-placeholder {
-  display: grid;
-  min-height: 150px;
-  place-items: center;
-  border: 1px solid #e5e8ee;
-  color: #174a91;
-  background: #f6f8fb;
-  font-size: 20px;
-  font-weight: 700;
-}
-
 .site-footer {
   padding-top: 28px;
   color: #8a8f96;
@@ -522,23 +417,6 @@ span.highlight,
   .internship-item {
     grid-template-columns: 1fr;
     gap: 10px;
-  }
-
-  .publication-media img {
-    max-height: none;
-  }
-
-  .stacked-preview {
-    min-height: 220px;
-  }
-
-  .icml-preview,
-  .iclr-preview {
-    min-height: 300px;
-  }
-
-  .internship-stack {
-    min-height: 300px;
   }
 
   .venue-tag {
