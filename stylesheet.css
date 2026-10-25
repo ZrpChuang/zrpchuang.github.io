@@ -351,6 +351,27 @@ p {
   grid-template-columns: 1fr;
 }
 
+.institution-item,
+.internship-item.institution-item {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.institution-logo {
+  display: block;
+  width: 76px;
+  height: 76px;
+  margin-top: 3px;
+  object-fit: contain;
+}
+
+.institution-details,
+.internship-body {
+  min-width: 0;
+}
+
 .site-footer {
   padding-top: 28px;
   color: #8a8f96;
@@ -421,5 +442,16 @@ span.highlight,
 
   .venue-tag {
     left: 0;
+  }
+
+  .institution-item,
+  .internship-item.institution-item {
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .institution-logo {
+    width: 56px;
+    height: 56px;
   }
 }
